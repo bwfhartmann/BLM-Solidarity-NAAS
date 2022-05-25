@@ -83,4 +83,4 @@ out_wh <- case.match(data=match_ea[,-(2)],
                      number.of.matches.to.return=20,
                      treatment.var="match", 
                      max.variance=TRUE,
-                     match.case="WM-040")
+                     match.case="WM-028")
