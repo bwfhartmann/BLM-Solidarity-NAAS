@@ -27,7 +27,7 @@ df_in$EthnicitySelf <- "I"
 
 ##############################################################################
 #White
-df_wh <- df |> dplyr::filter(EthnicitySelf=="W" & GenderSelf == "M")
+df_wh <- df |> dplyr::filter(EthnicitySelf=="W" & GenderSelf == "M" & WhiteProb >.7)
 
 col_ea <- names(df_ea)
 col_in <- names(df_in)
@@ -83,4 +83,4 @@ out_wh <- case.match(data=match_ea[,-(2)],
                      number.of.matches.to.return=20,
                      treatment.var="match", 
                      max.variance=TRUE,
-                     match.case="WM-028")
+                     match.case="WM-225")
